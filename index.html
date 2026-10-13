@@ -1,164 +1,430 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BongPizza</title>
-    
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome CDN for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- CSS File Link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
     <!-- Header Navbar Section -->
     <header>
-        <nav class="navbar">
-            <h2 class="logo">BongPizza</h2>
-            
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#flavour">Recipes</a></li>
-                <li><a href="#store">Our Stores</a></li>
-                <li><a href="#carrers">Careers</a></li>
-            </ul>
+      <nav class="navbar">
+        <h2 class="logo">BongPizza</h2>
 
-            <div class="nav-actions">
-                <button class="order-button">Order now</button>
-                <!-- Hamburger Menu Icon for Mobile -->
-                <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#flavour">Recipes</a></li>
+          <li><a href="#store">Our Stores</a></li>
+          <li><a href="#carrers">Careers</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="order-button">Order now</button>
+          <!-- Hamburger Menu Icon for Mobile -->
+          <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
     </header>
-
     <main>
-        <!-- Hero Section -->
-        <section id="hero-section">
-            <article class="hero-article">
-                <p class="upper-text">—— THE BENGALI PIZZA HOUSE</p>
-                <h1 class="middle-text">Pizza,<br>But Make It <br><span>BENGALI</span></h1>
-                <p class="bottom-text">Bold toppings. Familiar flavours. A little chaos. <br> A lot of cheese.</p>
-                
-                <div class="hero-buttons">
-                    <button class="explore-menu">Explore menu</button>
-                    <button class="find-store">Find Our Stores</button>
-                </div>
-            </article>
-
-            <!-- Hero Photo Section -->
-            <aside class="hero-photo-section">
-                <div class="hero-photo">
-                    <img class="hero-img" src="./assets/images/hero-image.webp" alt="Bengali Style Pizza">
-                    <div class="hot-spicy popup"><span class="dim-light"></span>HOT & SPICY</div>
-                    <div class="made-fresh popup"><span class="dim-light"></span>MADE FRESH</div>
-                    <div class="bng-inspire popup"><span class="dim-light"></span>BENGALI CHOICE</div>
-                </div>
-            </aside>
-        </section>
-
-        <!-- Menu Section -->
-        <section id="menu" class="menu-section">
-            <div class="upper-menu">
-                <p>Signature Pizzas</p>
-                <h2>The Ones Everyone Talks <br>About</h2>
-                <p class="sec">Our most loved combinations, made for people who don't play safe with pizza.</p>
+      <!-- Hero Section -->
+      <section id="hero-section">
+        <article class="hero-article">
+          <p class="upper-text">—— THE BENGALI PIZZA HOUSE</p>
+          <h1 class="middle-text">
+            Pizza,<br />But Make It <br /><span>BENGALI</span>
+          </h1>
+          <p class="bottom-text">
+            Bold toppings. Familiar flavours. A little chaos. <br />
+            A lot of cheese.
+          </p>
+          <div class="hero-buttons">
+            <button class="explore-menu">Explore menu</button>
+            <button class="find-store">Find Our Stores</button>
+          </div>
+        </article>
+        <!-- Hero Photo Section -->
+        <aside class="hero-photo-section">
+          <div class="hero-photo">
+            <img
+              class="hero-img"
+              src="./assets/images/hero-image.webp"
+              alt="Bengali Style Pizza"
+            />
+            <div class="hot-spicy popup">
+              <span class="dim-light"></span>HOT & SPICY
             </div>
-            <div class="menu-card">
-                <div class="card1 crd">
-                    <div class="pz-img">
-                        <img src="./assets/images/1.png" alt="">
-                    </div>
-                    <div class="pz-lower-txt">
-                        <h2>Hot & Spicy Chicken</h2>
-                        <p>Fiery grilled chicken, jalapeños, chili flakes, spicy drizzle.</p>
-                        <p class="price">₹349</p>
-                    </div>
-                </div>
-                <div class="card2 crd">
-                    <div class="pz-img">
-                        <img src="./assets/images/2.png" alt="">
-                    </div>
-                    <div class="pz-lower-txt">
-                        <h2>Hot & Spicy Chicken</h2>
-                        <p>Fiery grilled chicken, jalapeños, chili flakes, spicy drizzle.</p>
-                        <p class="price">₹349</p>
-                    </div>
-                </div>
-                <div class="card3 crd">
-                    <div class="pz-img">
-                        <img src="./assets/images/1.png" alt="">
-                    </div>
-                    <div class="pz-lower-txt">
-                        <h2>Hot & Spicy Chicken</h2>
-                        <p>Fiery grilled chicken, jalapeños, chili flakes, spicy drizzle.</p>
-                        <p class="price">₹349</p>
-                    </div>
-                </div>
-                <div class="card4 crd">
-                    <div class="pz-img">
-                        <img src="./assets/images/2.png" alt="">
-                    </div>
-                    <div class="pz-lower-txt">
-                        <h2>Hot & Spicy Chicken</h2>
-                        <p>Fiery grilled chicken, jalapeños, chili flakes, spicy drizzle.</p>
-                        <p class="price">₹349</p>
-                    </div>
-                </div>
+            <div class="made-fresh popup">
+              <span class="dim-light"></span>MADE FRESH
             </div>
-        </section>
-
-        <section id="story" class="story-section">
-            <div class="story-photo">
-                <img src="./assets/images/hero-image.webp" alt="">
+            <div class="bng-inspire popup">
+              <span class="dim-light"></span>BENGALI CHOICE
             </div>
-            <div class="story-sidetxt">
-                <p class="top-txt">Our Story</p>
-                <h2>Born in Bengal. <br>Built for Pizza <br>Lovers.</h2>
-                <p class="low-txt">What started as a late-night craving in a Kolkata kitchen became a movement. We believe pizza should be bold, familiar, and a little bit rebellious — just like the city that raised us.</p>
-                <button class="explore-menu" style="border: none;">Explore menu</button>
+          </div>
+        </aside>
+      </section>
+      <!-- Menu Section -->
+      <section id="menu" class="menu-section">
+        <div class="upper-menu">
+          <p class="eyebrow">Signature Pizzas</p>
+          <h2>
+            The Ones Everyone Talks
+            <br />
+            About
+          </h2>
+          <p class="sec">
+            Our most loved combinations, made for people who don't play safe
+            with pizza.
+          </p>
+        </div>
+        <div class="menu-card">
+          <!-- Card 1 -->
+          <div class="crd">
+            <div class="pz-img">
+              <img
+                src="./assets/images/1.png"
+                alt="Hot and Spicy Chicken Pizza"
+              />
             </div>
-        </section>
-
-        <section id="store" class="store-section">
-            <div class="side-map">
-                <!-- <p class="visit-txt">Visit Us </p> -->
-                <h2>Come visit the <br>Original.</h2>
-                <p class="bong">Bong Pizza Tarakeswar</p>
-                <p class="address">Burdwan Road, Bads nursinghome, Chandur, <br>Tarakeswar, West Bengal 712410</p>
-                <div class="time">
-                    <div class="shop">
-                        <p class="shop-open">Monday to Sunday</p><p class="shop-time">12:00 PM - 10:30 PM</p>
-                    </div>
-                    <div class="rush">
-                        <p class="rush-txt">Evening Rush</p><p class="rush-time">5:00 PM - 8:00 PM</p>
-                    </div>
+            <div class="pz-lower-txt">
+              <h3>Hot &amp; Spicy Chicken</h3>
+              <p class="description">
+                Fiery grilled chicken, jalapeños, chili flakes, spicy drizzle.
+              </p>
+              <div class="price-row">
+                <p class="price">₹349</p>
+                <button
+                  class="add-btn"
+                  type="button"
+                  aria-label="Add Hot and Spicy Chicken"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="crd">
+            <div class="pz-img">
+              <img src="./assets/images/2.png" alt="Chicken Overloaded Pizza" />
+            </div>
+            <div class="pz-lower-txt">
+              <h3>Chicken Overloaded</h3>
+              <p class="description">
+                Extra chicken, extra cheese, extra everything. No regrets.
+              </p>
+              <div class="price-row">
+                <p class="price">₹399</p>
+                <button
+                  class="add-btn"
+                  type="button"
+                  aria-label="Add Chicken Overloaded"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="crd">
+            <div class="pz-img">
+              <img src="./assets/images/1.png" alt="Peri Peri Paneer Pizza" />
+            </div>
+            <div class="pz-lower-txt">
+              <h3>Peri Peri Paneer</h3>
+              <p class="description">
+                Smoky paneer, peri peri spice, charred peppers, attitude.
+              </p>
+              <div class="price-row">
+                <p class="price">₹329</p>
+                <button
+                  class="add-btn"
+                  type="button"
+                  aria-label="Add Peri Peri Paneer"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="crd">
+            <div class="pz-img">
+              <img src="./assets/images/2.png" alt="Margherita Pizza" />
+            </div>
+            <div class="pz-lower-txt">
+              <h3>Margherita</h3>
+              <p class="description">
+                Classic done right. Fresh mozzarella, basil, perfect crust.
+              </p>
+              <div class="price-row">
+                <p class="price">₹249</p>
+                <button
+                  class="add-btn"
+                  type="button"
+                  aria-label="Add Margherita"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="story" class="story-section">
+        <div class="story-photo">
+          <img src="./assets/images/hero-image.webp" alt="" />
+        </div>
+        <div class="story-sidetxt">
+          <p class="top-txt">Our Story</p>
+          <h2>Born in Bengal. <br />Built for Pizza <br />Lovers.</h2>
+          <p class="low-txt">
+            What started as a late-night craving in a Kolkata kitchen became a
+            movement. We believe pizza should be bold, familiar, and a little
+            bit rebellious — just like the city that raised us.
+          </p>
+          <button class="explore-menu" style="border: none">
+            Explore menu
+          </button>
+        </div>
+      </section>
+      <section id="store" class="explores">
+        <div class="upper-texts">
+          <p>Browse By Mood</p>
+          <h2>Pick Your Mood.</h2>
+        </div>
+        <div class="item-photos">
+          <div class="img1">
+            <img src="./assets/images/2.png" alt="Chicken pizza" />
+            <h3>Chicken</h3>
+          </div>
+          <div class="img1">
+            <img src="./assets/images/2.png" alt="Veg pizza" />
+            <h3>Veg</h3>
+          </div>
+          <div class="img1">
+            <img src="./assets/images/2.png" alt="Cheese pizza" />
+            <h3>Cheese</h3>
+          </div>
+          <div class="img1">
+            <img src="./assets/images/2.png" alt="Spicy pizza" />
+            <h3>Spicy</h3>
+          </div>
+          <div class="img1">
+            <img src="./assets/images/2.png" alt="Pizza combos" />
+            <h3>Combos</h3>
+          </div>
+        </div>
+      </section>
+      <section class="store-section">
+        <div class="side-map">
+          <!-- <p class="visit-txt">Visit Us </p> -->
+          <h2>Come visit the <br />Original.</h2>
+          <p class="bong">Bong Pizza Tarakeswar</p>
+          <p class="address">
+            Burdwan Road, Bads nursinghome, Chandur, <br />Tarakeswar, West
+            Bengal 712410
+          </p>
+          <div class="time">
+            <div class="shop">
+              <p class="shop-open">Monday to Sunday</p>
+              <p class="shop-time">12:00 PM - 10:30 PM</p>
+            </div>
+            <div class="rush">
+              <p class="rush-txt">Evening Rush</p>
+              <p class="rush-time">5:00 PM - 8:00 PM</p>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="hvr zomato-btn">Order on zomato</button>
+            <button class="hvr swiggy-btn">Order on swiggy</button>
+          </div>
+        </div>
+        <div class="map-img">
+          <iframe
+            style="border-radius: 26px"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.5949626011425!2d88.00434457538604!3d22.891526079265866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f86feecc975645%3A0xa990bd73d5b35cf3!2sBong%20Pizza%20Tarakeswar!5e1!3m2!1sen!2sin!4v1790837906284!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Review Section -->
+      <section id="reviews" class="reviews-section">
+        <div class="reviews-heading">
+          <p class="review-eyebrow">A LITTLE LOVE FROM OUR GUESTS</p>
+          <h2>Don't Just Take <br />Our Word For It.</h2>
+          <p class="review-subtitle">
+            Good food, good people, and moments worth coming back for.
+          </p>
+        </div>
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div class="review-user">
+                <img
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjWzhP3eRbvC7CdQNy42h5Ci4XH3TR3WHfkUjD2rXPYKYgs_Wg9wWg=w45-h45-p-rp-mo-br100"
+                  alt="Nabankur Kamle"
+                  class="review-avatar"
+                />
+                <div class="review-user-info">
+                  <h3>Nabankur Kamle</h3>
+                  <p>4 reviews · 7 photos</p>
                 </div>
-                <div class="btns">
-                    <button class="hvr zomato-btn">Order on zomato</button>
-                    <button class="hvr swiggy-btn">Order on swiggy</button>
+              </div>
+              <span class="google-mark" aria-label="Google review">G</span>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">
+              Loved the overall experience! The ambience is beautiful with a
+              warm, cozy aesthetic, making it a perfect place to relax and spend
+              time. The staff was polite, service was smooth, and the location
+              is convenient. Definitely a place worth visiting!
+            </p>
+            <div class="review-footer">
+              <span>Google Review</span>
+              <span>3 months ago</span>
+            </div>
+          </article>
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div class="review-user">
+                <img
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjXbbNZV8MyiYOgsq4tr5jPqlRZg8LAm-EskBBAA8xI2dE0-usBosg=w45-h45-p-rp-mo-br100"
+                  alt="Souvik Das"
+                  class="review-avatar"
+                />
+                <div class="review-user-info">
+                  <h3>Souvik Das</h3>
+                  <p>6 reviews · 11 photos</p>
                 </div>
+              </div>
+              <span class="google-mark" aria-label="Google review">G</span>
             </div>
-            <div class="map-img">
-                <iframe style="border-radius: 26px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.5949626011425!2d88.00434457538604!3d22.891526079265866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f86feecc975645%3A0xa990bd73d5b35cf3!2sBong%20Pizza%20Tarakeswar!5e1!3m2!1sen!2sin!4v1790837906284!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">
+              Had a great experience! I ordered a pizza, and it was absolutely
+              delicious—fresh, flavorful, and perfectly cooked. The ambience was
+              also really nice, with a clean, cozy, and relaxing atmosphere.
+              Overall, it was a wonderful dining experience.
+            </p>
+            <div class="review-footer">
+              <span>Google Review</span>
+              <span>2 months ago</span>
             </div>
-        </section>
+          </article>
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div class="review-user">
+                <img
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjVSmhiO9jyGRjUsKylmawvs-_XacvUukKkGtxCRCHjgmvsj_fI2gg=w45-h45-p-rp-mo-ba12-br100"
+                  alt="Unmesh Kuila"
+                  class="review-avatar"
+                />
+                <div class="review-user-info">
+                  <h3>Unmesh Kuila</h3>
+                  <p>Local Guide · 19 reviews</p>
+                </div>
+              </div>
+              <span class="google-mark" aria-label="Google review">G</span>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">
+              One of the best cafe in Tarkeshwar...... The food quality is
+              extremely good, and also pocket friendly. They provide extreme
+              good service. One must visit this cafe and i also want to add a
+              point... The owners are very sweet and kind.
+            </p>
+            <div class="review-footer">
+              <span>Google Review</span>
+              <span>3 months ago</span>
+            </div>
+          </article>
+        </div>
+        <div class="reviews-bottom">
+          <span class="review-line"></span>
+          <p>MADE WITH LOVE. SERVED WITH PRIDE.</p>
+          <span class="review-line"></span>
+        </div>
+      </section>
     </main>
-
-    <footer>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>Bong<span>Pizza.</span></h2>
+          <p>
+            Good pizza. Good people.<br />
+            Always a reason to come back.
+          </p>
+        </div>
+        <!-- Social Links -->
+        <div class="footer-social">
+          <p class="footer-label">FOLLOW THE CRUST</p>
+          <a
+            href="https://www.instagram.com/bongpizza_official"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-arrow"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/bongpizzaofficial?rdid=Xv80Qp1esH2iLIJE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16FzH5YnXP%2F#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-arrow"></i>
+          </a>
+        </div>
+        <!-- Contact -->
+        <div class="footer-contact">
+          <p class="footer-label">GOT A CRAVING?</p>
+          <a href="tel:7076521313" class="footer-phone">
+            <i class="fa-solid fa-phone"></i>
+            70765 21313
+          </a>
+          <p class="footer-note">
+            One call away from your next favourite pizza.
+          </p>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-bottom">
         <p>&copy; 2026 BongPizza. All rights reserved.</p>
+        <span>MADE FOR PIZZA LOVERS.</span>
+      </div>
     </footer>
-
     <!-- JavaScript Link -->
-    <script src="./assets/js/main.js"></script>
-</body>
+    <script src="./assets/js/sccript.js"></script>
+  </body>
 </html>

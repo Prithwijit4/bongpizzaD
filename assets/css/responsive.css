@@ -1,52 +1,991 @@
-@media screen and (max-width: 992px) {
-    .middle-text {
-        font-size: 4.5rem;
+:root {
+    --gutter: max(4%, calc((100vw - 1400px) / 2));
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    max-width: none;
+    padding-inline: var(--gutter);
+}
+
+#hero-section {
+    padding: 2rem var(--gutter);
+}
+
+.menu-section {
+    padding-inline: var(--gutter);
+}
+
+.story-section {
+    padding-inline: var(--gutter);
+}
+
+.explores {
+    padding-inline: var(--gutter);
+}
+
+.reviews-section {
+    padding-inline: var(--gutter);
+}
+
+.site-footer {
+    padding-inline: var(--gutter);
+}
+
+.middle-text {
+    font-size: clamp(2.9rem, 7vw, 5.5rem);
+}
+
+.bottom-text {
+    font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+}
+
+.upper-menu h2 {
+    font-size: clamp(2.1rem, 4.5vw, 3rem);
+}
+
+.story-sidetxt h2 {
+    font-size: clamp(2.3rem, 5vw, 4rem);
+}
+
+.upper-texts h2 {
+    font-size: clamp(2.1rem, 4.5vw, 3.5rem);
+}
+
+.side-map h2 {
+    font-size: clamp(2.3rem, 5vw, 4rem);
+}
+
+.reviews-heading h2 {
+    font-size: clamp(2.1rem, 5vw, 3.5rem);
+}
+
+.pz-lower-txt h3 {
+    margin: 0;
+    color: var(--txt);
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.pz-lower-txt .description {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+    opacity: 0.85;
+}
+
+.store-section {
+    width: 100%;
+    padding-inline: var(--gutter);
+}
+
+.time {
+    height: auto;
+    padding: 1.1rem 1.5rem;
+}
+
+.map-img iframe {
+    width: 100%;
+    height: min(80vh, 520px);
+    border: 0;
+}
+
+.hero-buttons {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.find-store {
+    margin-left: 0;
+}
+
+header.scrolled {
+    box-shadow: 0 4px 20px rgba(50, 24, 18, 0.15);
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 112.5%;
     }
-    .bottom-text {
-        font-size: 1.15rem;
+
+    :root {
+        --gutter: max(4%, calc((100vw - 1600px) / 2));
+    }
+
+    .hero-photo {
+        max-width: 760px;
     }
 }
-@media screen and (max-width: 768px) {
+
+@media (min-width: 2560px) {
+    html {
+        font-size: 137.5%;
+    }
+
+    :root {
+        --gutter: max(4%, calc((100vw - 1900px) / 2));
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .nav-links {
+        gap: 22px;
+    }
+
+    .menu-card {
+        gap: 18px;
+    }
+
+    .pz-lower-txt {
+        padding: 1.2rem 1.3rem 1.4rem;
+    }
+
+    .pz-lower-txt h3 {
+        font-size: 1.2rem;
+    }
+
+    .pz-lower-txt .description {
+        font-size: 0.95rem;
+    }
+
+    .item-photos {
+        gap: 16px;
+    }
+
+    .item-photos .img1 {
+        height: 320px;
+    }
+
+    .time {
+        width: 90%;
+    }
+
+    .footer-main {
+        gap: 2rem;
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    #hero-section {
+        gap: 20px;
+    }
+
+    .hero-article {
+        gap: 24px;
+    }
+
+    /* Menu: 4 cols -> 2 cols */
+    .menu-section {
+        min-height: auto;
+        padding-block: 4rem;
+    }
+
+    .menu-card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .pz-img {
+        aspect-ratio: 1.2 / 1;
+    }
+
+    .pz-lower-txt h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Story */
+    .story-photo img {
+        width: 85%;
+    }
+
+    .explores {
+        min-height: auto;
+    }
+
+    .item-photos {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .item-photos .img1 {
+        grid-column: span 2;
+        height: 300px;
+    }
+
+    .item-photos .img1:nth-child(4),
+    .item-photos .img1:nth-child(5) {
+        grid-column: span 3;
+    }
+
+    .reviews-section {
+        min-height: auto;
+        padding-block: 5rem;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .review-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .review-card {
+        padding: 24px;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .order-button {
+        padding: 0.65rem 1.4rem;
+        font-size: 0.95rem;
+    }
+
+    .hero-article {
+        gap: 22px;
+    }
+
+    .popup {
+        width: 125px;
+        height: 38px;
+        font-size: 11.5px;
+    }
+
+    .bng-inspire {
+        width: 145px;
+    }
+
+    .made-fresh {
+        right: -10px;
+    }
+
+    /* Story: tighter */
+    .story-section {
+        min-height: auto;
+        padding-block: 3rem;
+        align-items: center;
+    }
+
+    .story-photo,
+    .story-sidetxt {
+        min-height: auto;
+    }
+
+    .story-sidetxt {
+        padding: 0 0 0 4%;
+    }
+
+    .story-photo img {
+        width: 95%;
+    }
+
+    .store-section {
+        height: auto;
+        flex-direction: column;
+        padding-block: 4rem;
+        gap: 2.5rem;
+    }
+
+    .side-map {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .time {
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .btns {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .btns .swiggy-btn {
+        margin-left: 0;
+    }
+
+    .map-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .map-img iframe {
+        height: 420px;
+    }
+
+    /* Footer */
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem 2rem;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* ---------- Navbar ---------- */
+    .navbar {
+        padding-inline: 5%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
     .hamburger {
         display: block;
     }
+
     .nav-links {
         position: absolute;
         top: 70px;
         left: -100%;
-        flex-direction: column;
-        background-color: var(--nav-bg);
         width: 100%;
+        flex-direction: column;
+        gap: 18px;
+        padding: 2rem 0;
         text-align: center;
-        padding: 2.5rem 0;
-        gap: 20px;
-        transition: left 0.3s ease-in-out;
+        background-color: var(--nav-bg);
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        max-height: calc(100vh - 70px);
+        max-height: calc(100dvh - 70px);
+        overflow-y: auto;
+        transition: left 0.3s ease-in-out;
     }
+
     .nav-links.active {
         left: 0;
     }
+
+    .nav-links a {
+        font-size: 1.05rem;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    /* ---------- Hero ---------- */
     #hero-section {
         flex-direction: column;
         min-height: auto;
-        padding-top: 3rem;
-        gap: 50px;
+        padding: 2.5rem 5% 3rem;
+        gap: 45px;
     }
+
     .hero-article,
     .hero-photo-section {
         width: 100%;
     }
+
     .hero-article {
         align-items: flex-start;
+        gap: 22px;
     }
-    .middle-text {
-        font-size: 3.8rem;
+
+    .hero-photo {
+        max-width: 560px;
+        margin-inline: auto;
+        justify-content: center;
     }
-    .popup {
-        width: 120px;
-        font-size: 11px;
+
+    .hero-img {
+        width: 92%;
     }
+
+    .hot-spicy {
+        top: 20px;
+        left: 0;
+    }
+
+    .made-fresh {
+        right: 0;
+    }
+
     .bng-inspire {
-        width: 135px;
+        left: 10px;
+        bottom: 15px;
+    }
+
+    /* ---------- Menu ---------- */
+    .menu-section {
+        padding: 3.5rem 5%;
+    }
+
+    .upper-menu {
+        margin-bottom: 2.5rem;
+    }
+
+    /* ---------- Story ---------- */
+    .story-section {
+        flex-direction: column;
+        padding: 3rem 5%;
+        gap: 2rem;
+    }
+
+    .story-photo,
+    .story-sidetxt {
+        width: 100%;
+    }
+
+    .story-photo {
+        justify-content: center;
+    }
+
+    .story-photo img {
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .story-sidetxt {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .low-txt {
+        max-width: 100%;
+    }
+
+    /* ---------- Explore ---------- */
+    .explores {
+        padding: 0 5% 3.5rem;
+    }
+
+    .upper-texts {
+        height: auto;
+        padding: 3rem 0 2rem;
+    }
+
+    .upper-texts p {
+        margin-top: 0;
+    }
+
+    /* ---------- Store ---------- */
+    .store-section {
+        padding: 3.5rem 5%;
+    }
+
+    .map-img iframe {
+        height: 380px;
+    }
+
+    /* ---------- Reviews ---------- */
+    .reviews-section {
+        padding: 4rem 5%;
+    }
+
+    .reviews-heading {
+        margin-bottom: 2.5rem;
+    }
+
+    .reviews-bottom {
+        margin-top: 3rem;
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+        padding: 3rem 5% 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* ---------- Hero ---------- */
+    .upper-text {
+        font-size: 0.85rem;
+    }
+
+    .bottom-text {
+        font-size: 1.05rem;
+    }
+
+    .bottom-text br {
+        display: none;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .explore-menu,
+    .find-store {
+        padding: 0.9rem 1.4rem;
+        font-size: 0.95rem;
+    }
+
+    .popup {
+        width: 112px;
+        height: 34px;
+        font-size: 10px;
+    }
+
+    .bng-inspire {
+        width: 128px;
+    }
+
+    .dim-light {
+        width: 8px;
+        height: 8px;
+        margin-right: 6px;
+    }
+
+    /* ---------- Menu: 1 column ---------- */
+    .menu-section {
+        padding: 3.2rem 5%;
+    }
+
+    .upper-menu {
+        margin-bottom: 2rem;
+    }
+
+    .upper-menu .sec {
+        font-size: 0.95rem;
+    }
+
+    .menu-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .crd {
+        border-radius: 24px;
+    }
+
+    .pz-img {
+        aspect-ratio: 1.15 / 1;
+    }
+
+    .pz-lower-txt {
+        padding: 1.3rem;
+    }
+
+    .pz-lower-txt h3 {
+        font-size: 1.25rem;
+    }
+
+    .pz-lower-txt .description {
+        font-size: 0.95rem;
+    }
+
+    .add-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+    /* ---------- Story ---------- */
+    .top-txt {
+        font-size: 1rem;
+        margin-bottom: 14px;
+    }
+
+    .low-txt {
+        font-size: 1rem;
+        line-height: 1.65;
+        margin-bottom: 24px;
+    }
+
+    /* ---------- Explore: 2 columns, last card full width ---------- */
+    .explores {
+        padding: 0 5% 3rem;
+    }
+
+    .upper-texts p {
+        font-size: 0.9rem;
+    }
+
+    .item-photos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .item-photos .img1,
+    .item-photos .img1:nth-child(4),
+    .item-photos .img1:nth-child(5) {
+        grid-column: auto;
+        height: 230px;
+        border-radius: 20px;
+    }
+
+    .item-photos .img1:last-child {
+        grid-column: 1 / -1;
+        height: 200px;
+    }
+
+    .item-photos .img1 h3 {
+        left: 15px;
+        bottom: 18px;
+        font-size: 1.15rem;
+    }
+
+    /* ---------- Store ---------- */
+    .store-section {
+        padding: 3rem 5%;
+        gap: 2rem;
+    }
+
+    .address {
+        font-size: 1.05rem;
+    }
+
+    .side-map .address br {
+        display: none;
+    }
+
+    .bong {
+        font-size: 1.1rem;
+    }
+
+    .time {
+        max-width: 100%;
+        padding: 1rem 1.2rem;
+        gap: 14px;
+    }
+
+    .shop-open,
+    .rush-txt {
+        font-size: 1rem;
+    }
+
+    .shop-time,
+    .rush-time {
+        font-size: 0.95rem;
+    }
+
+    .map-img iframe {
+        height: 320px;
+        border-radius: 20px;
+    }
+
+    /* ---------- Reviews: 1 column ---------- */
+    .reviews-section {
+        padding: 3.5rem 5%;
+    }
+
+    .reviews-heading {
+        gap: 12px;
+        margin-bottom: 2.2rem;
+    }
+
+    .review-eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    .review-subtitle {
+        font-size: 0.92rem;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .review-card {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .review-text {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+
+    .reviews-bottom {
+        gap: 10px;
+        margin-top: 2.5rem;
+    }
+
+    .reviews-bottom p {
+        font-size: 0.62rem;
+        letter-spacing: 1px;
+    }
+
+    .review-line {
+        width: 25px;
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+        padding: 3rem 6% 0;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-brand h2 {
+        font-size: 2.2rem;
+    }
+
+    .footer-social a {
+        max-width: 100%;
+    }
+
+    .footer-phone {
+        font-size: 1.35rem;
+    }
+
+    .footer-bottom {
+        min-height: 85px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+        padding: 18px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.78rem;
+    }
+
+    .footer-bottom span {
+        font-size: 0.62rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.35rem;
+    }
+
+    .order-button {
+        padding: 0.55rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .hamburger {
+        font-size: 1.45rem;
+    }
+
+    #hero-section {
+        padding: 2rem 5% 2.5rem;
+        gap: 36px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .explore-menu,
+    .find-store {
+        width: 100%;
+        text-align: center;
+    }
+
+    .story-sidetxt .explore-menu {
+        width: 100%;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .btns .zomato-btn,
+    .btns .swiggy-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .time .shop,
+    .time .rush {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .map-img iframe {
+        height: 280px;
+    }
+
+    .footer-social a {
+        padding: 12px 0;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .order-button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .middle-text {
+        font-size: 2.6rem;
+    }
+
+    .popup {
+        width: 100px;
+        height: 30px;
+        font-size: 9px;
+    }
+
+    .bng-inspire {
+        width: 116px;
+    }
+
+    .upper-menu h2,
+    .story-sidetxt h2,
+    .upper-texts h2,
+    .side-map h2,
+    .reviews-heading h2 {
+        font-size: 1.95rem;
+    }
+
+    .item-photos .img1,
+    .item-photos .img1:nth-child(4),
+    .item-photos .img1:nth-child(5) {
+        height: 195px;
+    }
+
+    .item-photos .img1:last-child {
+        height: 180px;
+    }
+
+    .item-photos .img1 h3 {
+        left: 12px;
+        bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .review-card {
+        padding: 18px;
+    }
+
+    .review-avatar {
+        width: 42px;
+        height: 42px;
+    }
+
+    .footer-phone {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-height: 520px) and (orientation: landscape) {
+    #hero-section {
+        min-height: auto;
+    }
+
+    .nav-links {
+        padding: 1rem 0;
+        gap: 12px;
+    }
+
+    .menu-section,
+    .explores,
+    .reviews-section {
+        min-height: auto;
+    }
+}
+
+
+@media (hover: none) {
+
+    .crd:hover,
+    .review-card:hover,
+    .explore-menu:hover,
+    .find-store:hover,
+    .zomato-btn:hover,
+    .swiggy-btn:hover,
+    .order-button:hover {
+        transform: none;
+    }
+
+    .crd:hover .pz-img img,
+    .item-photos .img1:hover img {
+        transform: none;
+    }
+
+    .add-btn:hover {
+        transform: none;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .hero-img,
+    .dim-light {
+        animation: none;
+    }
+
+    .crd,
+    .pz-img img,
+    .add-btn,
+    .review-card,
+    .item-photos .img1 img,
+    .item-photos .img1 h3,
+    .nav-links {
+        transition: none;
+    }
+
+    .crd:hover,
+    .crd:hover .pz-img img,
+    .add-btn:hover,
+    .review-card:hover,
+    .item-photos .img1:hover img,
+    .item-photos .img1:hover h3 {
+        transform: none;
     }
 }
